@@ -1,0 +1,159 @@
+:root{
+  font-size: 62.5%;
+  --primary: #ececec;
+  --secondary: #282c34;
+  --company: #C30E2A;
+  --companySecondary: #282828;
+  --hightlight: #282c34;
+}
+
+// .lightmode{
+//   --primary: #ececec;
+//   --secondary: #282c34;
+// }
+
+/* .darkmode{
+  --primary: #282c34;
+  --secondary: #ececec;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--primary);
+  color: var(--primary);
+  font-size: 1.6rem;
+}
+
+a{
+  
+  text-decoration: none;
+}
+
+.header{
+  background-color: var(--company);
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+
+  .logo{
+    width: 23.5rem;
+    margin-left: 2rem;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .logo {
+      width: 6rem;
+      min-width: 6rem;
+      height: 6rem;
+
+      margin-top: 1rem;
+      overflow: hidden;
+      border:#28282855 0.2rem solid;
+      border-radius: 100%;
+
+      img{
+        width: 25.5rem;
+        transform: translateX(-1rem) translateY(-1rem);
+      }
+    }
+  }
+
+  .fastContact{
+    width: 23.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2rem;
+
+    a{
+      margin: 0.3rem;
+    }
+
+    i{
+      color: var(--secondary);
+      font-size: 3.2rem;
+      text-decoration: none;
+    }
+
+    i:hover{
+      color: var(--primary);
+    }
+
+    .fb{
+      color: #3c60ad;
+      font-size: 3.5rem;
+    }
+
+    .fb:hover{
+      color: #1b6bd4;
+    }
+  }
+}
+
+nav{
+  background-color: var(--companySecondary);
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+
+  a {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 3rem;
+    padding: 0 0.3rem;
+    position: relative;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--primary);
+    bottom: -0.2rem;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  @media screen and (max-width: 600px) {
+    a {
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
