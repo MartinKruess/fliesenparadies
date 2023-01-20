@@ -4,7 +4,7 @@
   --secondary: #282c34;
   --company: #C30E2A;
   --companySecondary: #282828;
-  --hightlight: #282c34;
+  --hightlight: #ececec99;
 }
 
 // .lightmode{
@@ -27,6 +27,7 @@ body{
   background-color: var(--primary);
   color: var(--primary);
   font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a{
@@ -111,6 +112,7 @@ nav{
   padding: 0 2rem;
   position: sticky;
   top: 0;
+  z-index: 2;
 
   a {
     color: var(--primary);
@@ -146,14 +148,94 @@ nav{
   }
 }
 
+article{
+  width: 80%;
+  margin: auto;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carouselContainer{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  
+    img{
+      width: 100%;
+    }
+
+    .textContainer{
+      background-color: var(--company);
+      color: var(--primary);
+      min-width: 30rem;
+      padding: 0 1rem;
+      position: absolute;
+      top: 15rem;
+      clip-path: polygon(0 0, 100% 1%, 64% 100%, 0% 100%);
+
+      h1{
+        width: 85%;
+        font-size: 2.2rem;
+        margin-right: 2rem;
+        padding-left: 1rem;
+      }
+
+      p{
+        width: 70%;
+        margin-right: 2rem;
+        font-weight: 500;
+        padding-left: 1.1rem;
+      }
+    }
+}
+
+.firstArticle, .secondArticle{
+  height: 90vh;
+  margin-top: 20vh;
+  box-shadow: inset 0.2rem -0.2rem 0.2rem var(--primary);
+
+  .textblock{
+    background-color: var(--primary);
+    color: var(--companySecondary);
+    width: 100%;
+    padding: 3rem 10rem;
+    position: sticky;
+    top: 85rem;
+    z-index: 1;
+
+    p{
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+.firstArticle{
+  background: url("bg02.jpg") center/cover;
+}
+
+.secondArticle{
+  background: url("bg03.jpg") center/cover;
+}
+
+
+
+footer{
+  background-color: var(--company);
+  color: var(--primary);
+  height: 30rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 2.5rem;
+
+  .footContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    div{
+      width: 32%;
+      height: 80%;
+      padding: 1.5rem;
+    }
+  }
 }
