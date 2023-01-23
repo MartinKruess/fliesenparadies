@@ -1,4 +1,4 @@
-export const Textblock = () => {
+export const FirstTextContainer = () => {
     return(
         <div className="textblock">
             <h2>Ein Unternehmen mit Tradition</h2>
@@ -7,9 +7,6 @@ export const Textblock = () => {
             </p>
             <p>
                 Ob die komplette Badsanierung, Renovierung des Wohnbereichs oder eine neue Optik auf der Terrasse, wir sind der richtige Partner für Sie.
-            </p>
-            <p>
-                Gern berät Sie unser kompetentes Team und steht Ihnen mit Rat und Tat zur Seite.
             </p>
         </div>
     )

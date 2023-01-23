@@ -1,9 +1,9 @@
-import { Textblock } from "./textblock"
+import { SecondTextContainer } from "./secondTextContainer"
 
 export const SecondArticle = () => {
     return(
         <article className="secondArticle">
-            <Textblock />
+            <SecondTextContainer />
         </article>
     )
 }
