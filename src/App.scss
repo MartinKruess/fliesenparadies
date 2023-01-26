@@ -397,10 +397,12 @@ article{
 // TEAM
 
 .teamSinglePreview{
+  background: url('/public/rauteBG.png') center/contain;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 2.5rem auto;
+  border: solid;
 
   h1, h2{
     width: 100%;
