@@ -344,32 +344,123 @@ article{
   flex-direction: row;
   padding: 1rem 0;
 
+  h2{
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+  }
+  
+  span{
+    font-size: 8rem;
+  }
 
   .servicecard{
 
-    width: 50rem;
+    width: 35rem;
     height: 35rem;
     margin: 1rem;
-    border: solid;
+    border-radius: 0.3rem;
+    border-style: groove;
+    box-shadow:
+    4px 4px 6px var(--companySecondary),
+    -1px -1px 3px var(--companySecondary),
+    -1px 4px 6px var(--companySecondary),
+    4px -1px 6px var(--companySecondary);
 
     img{
       width: 100%;
     }
   }
 
-  .card1{
-    background: url(/bg01.jpg) center/cover;
+  #card1{
+    background: url("/bg_innen.jpg") center/cover;
   }
 
-  .card2{
-    background: url(/bg01.jpg) center/cover;
+  #card2{
+    background: url("/bg01.jpg") center/cover;
   }
-  .card3{
-    background: url(/bg01.jpg) center/cover;
+  #card3{
+    background: url("/bg_außen.jpg") center/cover;
   }
-  .card4{
-    background: url(/bg01.jpg) center/cover;
+  #card4{
+    background: url("/bg01.jpg") center/cover;
   }
+
+  .cardTextblock{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    h3, p{
+      background-color: var(--primary);
+    }
+  }
+}
+
+// TEAM
+
+.teamSinglePreview{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.5rem auto;
+
+  h1, h2{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0 2rem 0;
+  }
+
+  h1{
+    font-size: 5rem;
+  }
+
+  
+}
+
+.previesContainer{
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  .personalImage{
+    width: 80%;
+    height: 80%;
+    border: var(--company) solid 0.3rem;
+    border-radius: 100%;
+    border-style: groove;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: -6rem;
+    }
+
+    .personalName{
+      background-color: var(--company);
+      color: var(--primary);
+      width: 90%;
+      height: 6rem;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-top: 0.8rem;
+      position: relative;
+      top: 17.5rem;
+      left: 1rem;
+      z-index: 1;
+    }
+  }
+
+  
 }
 
 footer{
@@ -482,6 +573,18 @@ footer{
         width: 90%;
         height: 3rem;
         font-size: 1.6rem;
+      }
+    }
+  }
+
+  footer{
+
+    .footContainer{
+      width: 90%;
+
+      div{
+        width: 85%;
+        padding: 0.5rem;
       }
     }
   }

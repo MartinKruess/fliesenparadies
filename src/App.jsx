@@ -6,6 +6,7 @@ import { Header } from './components/reusables/header'
 import {Landingpage} from "./components/pages/landingpage"
 import { Services } from './components/pages/services'
 import { Company } from './components/pages/company'
+import { Team } from './components/company_assets/team'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Landingpage />} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/unternehmen" element={<Company />} />
+        <Route exact path="/team" element={<Team />} />
       </Routes>
     </main>
   )
