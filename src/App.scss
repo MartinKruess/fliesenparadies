@@ -177,6 +177,7 @@ article{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   
     img{
       width: 100%;
@@ -188,7 +189,7 @@ article{
       min-width: 30rem;
       padding: 0 1rem;
       position: absolute;
-      top: 15rem;
+      top: 0rem;
       clip-path: polygon(0 0, 100% 1%, 64% 100%, 0% 100%);
 
       h1{
@@ -394,6 +395,8 @@ article{
   }
 }
 
+// COMPANY - TEAM & HISTORY
+
 // TEAM
 
 .teamSinglePreview{
@@ -411,11 +414,21 @@ article{
     margin: 5rem 0 2rem 0;
   }
 
-  h1{
-    font-size: 5rem;
+  .switchMenu{
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+
+    div{
+      width: 50%;
+      border: solid 0.2rem var(--companySecondary);
+    }
   }
 
-  
+  .switchMenu:hover{
+    cursor: pointer;
+  }
 }
 
 .previesContainer{
@@ -457,14 +470,54 @@ article{
       z-index: 1;
     }
   }
-
-  
 }
+
+// HISTORY
+
+.historyContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 500;
+
+  .historyBox{
+    width: 49%;
+    min-width: 30rem;
+  }
+
+  .historyArticle{
+    width: 100%;
+    display: flex;
+    margin-top: 2.5rem;
+    padding: 1.8rem;
+  
+    h3{
+      font-size: 1.7rem;
+    }
+
+    .historyText{
+      width: 70%;
+      padding: 0 2rem;
+    }
+  
+    .imgBox{
+      width: 30%;
+
+      img{
+        width: 100%;
+        max-height: 28.5rem;
+      }
+    }
+    
+  }
+}
+
 
 footer{
   background-color: var(--company);
   color: var(--primary);
-  height: 30rem;
+  // height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -473,13 +526,39 @@ footer{
   .footContainer{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    padding: 2rem 0rem;
 
-    div{
-      width: 32%;
-      height: 80%;
-      padding: 1.5rem;
+    .footerLeft{
+      width: 100%;
+      min-width: 24rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      div{
+        width: 33%;
+        min-width: 24rem;
+        text-align: center;
+        align-self: center;
+      }
+    }
+    .footerBottom{
+      width: 100%;
+      display: flex;
+      padding: 1rem 0;
+
+      div{
+        width: 33%;
+        text-align: center;
+        align-self: center;
+
+        img{
+          max-width: 90%;
+          max-height: 9rem;
+        }
+      }
     }
   }
 }
@@ -498,6 +577,12 @@ footer{
     right: 12.5%;
   }
 
+  .historyContainer{
+    .historyBox{
+      width: 100%;
+    }
+  }
+  
   footer{
 
     .footContainer{
@@ -513,6 +598,35 @@ footer{
 @media screen and (max-width: 800px) {
   .contactForm{
     width: 80%;
+  }
+
+  .switchMenu{
+    flex-direction: column;
+    div{
+      min-width: 100%;
+      font-size: 2.5rem;
+    }
+  }
+
+  .historyContainer{
+    
+    .historyBox{
+      width: 100%;
+      
+      .historyArticle{
+        flex-direction: column;
+        
+        .historyText{
+          width: 90%;
+          margin: auto;
+        }
+
+        .imgBox{
+          width: 60%;
+          margin: 2rem auto;
+        }
+      }
+    }
   }
 }
 
