@@ -2,57 +2,65 @@ export const teammitglieder = [
 
     {
         name: "Carsten Hemp",
-        titel: "Fliesenlegermeister",
+        gruppe: "Fliesenleger",
+        titel: "Meister",
         bild: "/team/CarstenHemp.jpeg",
     },
     {
         name: "Montaser al Ibrahim",
-        titel: "Fliesenleger",
+        gruppe: "Fliesenleger",
         bild: "/team/MontaserAlIbrahim.jpeg",
     },
     {
         name: "Olaf Sachse",
-        titel: "Fliesenleger",
+        gruppe: "Fliesenleger",
         bild: "/team/OlafSachse.jpeg",
     },
     {
         name: "Ralf Voß",
+        gruppe: "Projektleiter",
         titel: "Projektleiter",
         bild: "/team/RalfVoß.jpeg",
     },
     {
         name: "Bilal Kaka Hama",
-        titel: "Fliesenleger",
-        bild: "/team/RalfVoß.jpeg",
+        gruppe: "Fliesenleger",
+        bild: "/team/BilalKakaHama.jpg",
     },
     {
         name: "Sebastian Voß",
-        titel: "Chef",
-        bild: "/team/MaxMustermann2.png",
+        gruppe: "Office",
+        titel: "Geschäftsführer",
+        bild: "/team/SebastianVoss.jpg",
     },
     {
         name: "Gerhild Krüss",
-        titel: "Chefsekretärin",
+        gruppe: "Office",
         bild: "/team/MaxMustermann2.png",
     },
     {
         name: "Naser Sedegi",
-        titel: "Azubi",
+        gruppe: "Azubi",
         bild: "/team/MaxMustermann2.png",
     },
     {
         name: "Zayideen Hussain",
-        titel: "Azubi",
+        gruppe: "Azubi",
         bild: "/team/MaxMustermann2.png",
     },
     {
         name: "Daniel Rynduch",
-        titel: "Bauhelfer",
+        gruppe: "Bauhelfer",
         bild: "/team/MaxMustermann2.png",
     },
     {
         name: "Heinrich Lewanski",
-        titel: "Bauhelfer",
+        gruppe: "Bauhelfer",
         bild: "/team/MaxMustermann2.png",
+    },
+    {
+        name: "Osman Jakupi",
+        gruppe: "Partner",
+        bild: "/team/OsmanJakupi.jpg",
     },
 ]

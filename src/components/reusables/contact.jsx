@@ -1,17 +1,15 @@
-import { useEffect } from "react"
-import { useState } from "react"
-import { Anfrage } from "./anfrage"
-import { Feedback } from "./feedback"
+import { useEffect, useState } from "react"
+import { ContactBG } from "../contact_assets/contactbg"
+
 
 export const Contact = () => {
     const [contactActive, setContactActive] = useState(false)
-    const [contactValue, setContactValue] = useState("anfrage")
 
     useEffect (()=> {
         document.body.style.overflow = contactActive ? 'hidden' : 'unset'
     },[contactActive])
 
-    console.log(contactValue)
+    console.log("ContactOpen?", contactActive)
 
     return(
         <>
@@ -22,15 +20,7 @@ export const Contact = () => {
                 </div>
                 
             </div>
-            {contactActive && <div className="contactForm">
-                <select name="contect" id=""
-                onChange={(e) => setContactValue(e.target.value)}>
-                    <option value="anfrage" >Unverbindliche Anfrage</option>
-                    <option value="feedback">Feedback</option>
-                </select>
-                {contactValue === "anfrage" && <Anfrage />}
-                {contactValue === "feedback" && <Feedback />}
-            </div>}
+            {contactActive && <ContactBG setContactActive={setContactActive}/>}
         </>
     )
 }

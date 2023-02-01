@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export const TopCarousel = () => {
@@ -24,16 +24,22 @@ export const TopCarousel = () => {
         },
     ]
 
-    let id = 0
     
+    // useEffect(() =>{
+        
+    // },[index])
+
+    // setInterval(index < images.length-1 ? setIndex(index+1) : setIndex(0), 3000)
+
+    console.log("Index:", index)
 
     return(
         <article>
             <div className="carouselContainer">
-                <img src={images[id].name}/>
-                <div className="textContainer" style={{minWidth: images[id].width}}>
-                    <h1><strong>{images[id].header}</strong></h1>
-                    <p>{images[id].text}</p>
+                <img src={images[index].name}/>
+                <div className="textContainer" style={{minWidth: images[index].width}}>
+                    <h1><strong>{images[index].header}</strong></h1>
+                    <p>{images[index].text}</p>
                 </div>
                 
             </div>

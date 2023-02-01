@@ -6,7 +6,7 @@ export const SinglePreview = (props) => {
             <div className="personalImage">
                 <div className="personalName">
                     {props.mitglied.name}<br />
-                    {props.mitglied.titel}
+                    <span>{props.mitglied.titel}</span>
                 </div>
                 <img src={props.mitglied.bild} alt="" />
             </div>
