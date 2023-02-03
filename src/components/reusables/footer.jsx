@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const Footer = () => {
     return(
         <footer>
@@ -20,9 +22,9 @@ export const Footer = () => {
                     <div><img src="/zertifikat_partner.png" alt="" /></div>
                 </div>
                 <div className="footerBottom">
-                    <div>Datenschutz</div>
-                    <div>Impressum</div>
-                    <div>Disclaimer</div>
+                    <div><Link to="/impressum">Impressum</Link> </div>
+                    <div><Link to="/datenschutz">Datenschutz</Link></div>
+                    <div><Link to="/disclaimer">Disclaimer</Link></div>
                 </div>
             </div>
         </footer>

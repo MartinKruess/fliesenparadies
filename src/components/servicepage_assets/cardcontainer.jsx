@@ -3,59 +3,75 @@ import { ServiceCard } from "./serviceCard"
 export const CardContainer = () => {
 
     const privatServices = [
+        // Privat- und Einzelaufträge
         {
-            img: "card1",
+            img: "pcard1",
             title: "Bodenbeläge",
-            text: "Bäder, Küchen, Saunen und Pools",
+            text: "Bäder, Küchen, Flure Saunen und Pools",
             size: "small",
         },
         {
-            img: "card2",
+            img: "pcard2",
             title: "Wandgestaltung",
-            text: "Wohnzimmer und Flure",
+            text: "Flure, Wohn und Arbeitszimmer",
             size: "small",
         },
         {
-            img: "card3",
+            img: "pcard3",
             title: "Außenbereich",
-            text: "Gern planen wir mit Ihnen gemeinsam Ihre Terasse, Balkon oder Loggia und mehr.",
+            text: "Terrassen, Balkone, Pools und Saunen",
             size: "small",
         },
         {
-            img: "card4",
+            img: "pcard4",
             title: "Sannierungsarbeiten",
-            text: "Wir bessern auch aus und Fliese auf Fliese",
+            text: "Wir bessern auch aus",
             size: "small",
         },
         {
-            img: "card1",
-            title: "Innovative Ideen",
-            text: "Think out of the Box.",
-            size: "medium",
+            img: "pcard5",
+            title: "Überfliesen",
+            text: "Eine schnelle und saubere Lösung",
+            size: "small",
         },
         {
-            img: "card2",
-            title: "Mehrfamilienhaus",
-            text: "Grundsannierungen aller Bäder im Haus",
-            size: "medium",
+            img: "pcard6",
+            title: "Think out of the Box",
+            text: "Ob Mosaikmuster oder Sonderanfertigungen",
+            size: "small",
+        },
+        // Mehrfamilienhaus, Groß- und Geschäftsaufträge
+        {
+            img: "gcard1",
+            title: "Mehrfamilienhaus / Genossenschaften",
+            text: "Ob Mosaikmuster oder Sonderanfertigungen",
+            size: "company",
         },
         {
-            img: "card3",
-            title: "Mehrfamilienhaus",
-            text: "Wanfvertäfelung im ganzen Hausflur",
-            size: "medium",
+            img: "gcard2",
+            title: "Großraumsannierung",
+            text: "Eingangshallen, Schwimmbäder, Umkleiden",
+            size: "company",
         },
         {
-            img: "card4",
-            title: "Bäder und Saunalandschaften",
-            text: "Think out of the Box.",
-            size: "medium",
+            img: "gcard3",
+            title: "Think out of the Box",
+            text: "Innovatieve Ideen fordern ein innovatives Team",
+            size: "company",
         },
-        
     ]
 
     return (
         <article className="cardConatiner">
+            <div>
+                <p>
+                    Planen Sie mit unserem 3D-Badplaner Ihr Projekt.
+                </p>
+                <p>
+                    Gern planen wir mit Ihnen gemeinsam Ihr nächstes Projekt.
+                </p>
+            </div>
+            
             <h2>Für das idyllische Zuhause</h2>
             {privatServices.filter(serv => serv.size === "small").map((service, i,) => (
                 <ServiceCard key={i} service={service}/>
@@ -63,7 +79,7 @@ export const CardContainer = () => {
             }
 
             <h2>Wir könne auch <span>groß!</span></h2>
-            {privatServices.filter(serv => serv.size === "medium").map((service, i,) => (
+            {privatServices.filter(serv => serv.size === "company").map((service, i,) => (
                 <ServiceCard key={i} service={service}/>
             ))
             }

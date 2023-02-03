@@ -7,6 +7,7 @@ import {Landingpage} from "./components/pages/landingpage"
 import { Services } from './components/pages/services'
 import { Company } from './components/pages/company'
 import { Team } from './components/company_assets/team'
+import { Impressum } from './components/pages/impressum'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/unternehmen" element={<Company />} />
         <Route exact path="/team" element={<Team />} />
+        <Route exact path="/impressum" element={<Impressum />} />
       </Routes>
     </main>
   )

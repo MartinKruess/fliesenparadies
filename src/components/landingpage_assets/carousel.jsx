@@ -41,7 +41,6 @@ export const TopCarousel = () => {
                     <h1><strong>{images[index].header}</strong></h1>
                     <p>{images[index].text}</p>
                 </div>
-                
             </div>
         </article>
     )
