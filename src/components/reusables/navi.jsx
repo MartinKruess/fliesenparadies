@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export const Navi = () => {
     const [burgerOn, setBurgerOn] = useState(false)
 
     useEffect(() => {
-        console.log(burgerOn)
     },[burgerOn])
 
     useEffect(() => {

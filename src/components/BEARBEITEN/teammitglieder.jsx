@@ -7,9 +7,9 @@ export const teammitglieder = [
         bild: "/team/CarstenHemp.jpeg",
     },
     {
-        name: "Montaser al Ibrahim",
+        name: "Montaser Al Ibrahim",
         gruppe: "Fliesenleger",
-        bild: "/team/MontaserAlIbrahim.jpeg",
+        bild: "/team/MontaserAlIbrahim.jpg",
     },
     {
         name: "Olaf Sachse",
@@ -20,7 +20,7 @@ export const teammitglieder = [
         name: "Ralf Voß",
         gruppe: "Projektleiter",
         titel: "Projektleiter",
-        bild: "/team/RalfVoß.jpeg",
+        bild: "/team/RalfVoß.jpg",
     },
     {
         name: "Bilal Kaka Hama",
@@ -36,27 +36,27 @@ export const teammitglieder = [
     {
         name: "Gerhild Krüss",
         gruppe: "Office",
-        bild: "/team/MaxMustermann2.png",
+        bild: "/team/GerhildKrüss.jpg",
     },
     {
         name: "Naser Sedegi",
         gruppe: "Azubi",
-        bild: "/team/MaxMustermann2.png",
+        bild: "/team/NaserSedegi.jpg",
     },
     {
         name: "Zayideen Hussain",
         gruppe: "Azubi",
-        bild: "/team/MaxMustermann2.png",
+        bild: "/team/MaxMustermann.png",
     },
     {
         name: "Daniel Rynduch",
         gruppe: "Bauhelfer",
-        bild: "/team/MaxMustermann2.png",
+        bild: "/team/DanielRynduch.jpg",
     },
     {
         name: "Heinrich Lewanski",
         gruppe: "Bauhelfer",
-        bild: "/team/MaxMustermann2.png",
+        bild: "/team/MaxMustermann.png",
     },
     {
         name: "Osman Jakupi",

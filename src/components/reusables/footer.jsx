@@ -24,7 +24,7 @@ export const Footer = () => {
                 <div className="footerBottom">
                     <div><Link to="/impressum">Impressum</Link> </div>
                     <div><Link to="/datenschutz">Datenschutz</Link></div>
-                    <div><Link to="/disclaimer">Disclaimer</Link></div>
+                    <div></div>
                 </div>
             </div>
         </footer>

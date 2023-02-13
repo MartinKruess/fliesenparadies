@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { ContactBG } from "../contact_assets/contactbg"
+//import { ContactUs } from "../contact_assets/contact_logic"
+import { ContactReason } from "../contact_assets/contact_reason"
 
 
 export const Contact = () => {
@@ -9,10 +11,9 @@ export const Contact = () => {
         document.body.style.overflow = contactActive ? 'hidden' : 'unset'
     },[contactActive])
 
-    console.log("ContactOpen?", contactActive)
-
     return(
         <>
+            
             <div className="contactContainer">
                 <div onClick={() => setContactActive(!contactActive)}>
                     <p>Kontakt:</p>
@@ -20,7 +21,12 @@ export const Contact = () => {
                 </div>
                 
             </div>
-            {contactActive && <ContactBG setContactActive={setContactActive}/>}
+            {contactActive && 
+            <div>
+                <ContactBG setContactActive={setContactActive} />
+                <ContactReason setContactActive={setContactActive}/>
+                {/* <ContactUs /> */}
+            </div>}
         </>
     )
 }

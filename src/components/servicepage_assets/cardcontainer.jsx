@@ -5,59 +5,63 @@ export const CardContainer = () => {
     const privatServices = [
         // Privat- und Einzelaufträge
         {
-            img: "pcard1",
+            img: "sCard1",
             title: "Bodenbeläge",
-            text: "Bäder, Küchen, Flure Saunen und Pools",
+            text: "Küchen, Bäder & Flure",
             size: "small",
         },
         {
-            img: "pcard2",
+            img: "sCard2",
             title: "Wandgestaltung",
-            text: "Flure, Wohn und Arbeitszimmer",
+            text: "Wohn- & Arbeitszimmer in classisch Schick",
             size: "small",
         },
         {
-            img: "pcard3",
+            img: "sCard3",
             title: "Außenbereich",
             text: "Terrassen, Balkone, Pools und Saunen",
             size: "small",
         },
         {
-            img: "pcard4",
-            title: "Sannierungsarbeiten",
-            text: "Wir bessern auch aus",
+            img: "sCard4",
+            title: "Kaminverkleidung",
+            text: "Kaminöfen für das gemütliche Ambiente",
             size: "small",
         },
+        
+
+        // Sannierungen
         {
-            img: "pcard5",
+            img: "mCard1",
+            title: "Sannierungsarbeiten",
+            text: "Reperaturen & optische Aufwertungen",
+            size: "medium",
+        },
+        {
+            img: "mCard2",
             title: "Überfliesen",
             text: "Eine schnelle und saubere Lösung",
-            size: "small",
+            size: "medium",
         },
         {
-            img: "pcard6",
+            img: "mCard3",
             title: "Think out of the Box",
-            text: "Ob Mosaikmuster oder Sonderanfertigungen",
-            size: "small",
+            text: "Mosaikmuster & Sonderanfertigungen",
+            size: "medium",
         },
+        
         // Mehrfamilienhaus, Groß- und Geschäftsaufträge
         {
-            img: "gcard1",
+            img: "lCard1",
             title: "Mehrfamilienhaus / Genossenschaften",
-            text: "Ob Mosaikmuster oder Sonderanfertigungen",
-            size: "company",
+            text: "Hausflure, Küchen, Bäder & mehr",
+            size: "large",
         },
         {
-            img: "gcard2",
+            img: "lCard2",
             title: "Großraumsannierung",
             text: "Eingangshallen, Schwimmbäder, Umkleiden",
-            size: "company",
-        },
-        {
-            img: "gcard3",
-            title: "Think out of the Box",
-            text: "Innovatieve Ideen fordern ein innovatives Team",
-            size: "company",
+            size: "large",
         },
     ]
 
@@ -65,10 +69,10 @@ export const CardContainer = () => {
         <article className="cardConatiner">
             <div>
                 <p>
-                    Planen Sie mit unserem 3D-Badplaner Ihr Projekt.
+                    Planen Sie mit unserem 3D-Planer Ihr neues Projekt.
                 </p>
                 <p>
-                    Gern planen wir mit Ihnen gemeinsam Ihr nächstes Projekt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aperiam vel modi tenetur voluptatem? Ipsum perspiciatis ab consectetur sit necessitatibus eligendi quisquam impedit aliquid ex ipsa, distinctio, deleniti reiciendis suscipit.
                 </p>
             </div>
             
@@ -77,9 +81,14 @@ export const CardContainer = () => {
                 <ServiceCard key={i} service={service}/>
             ))
             }
+            <h2>Aus Alt mach Neu</h2>
+            {privatServices.filter(serv => serv.size === "medium").map((service, i,) => (
+                <ServiceCard key={i} service={service}/>
+            ))
+            }
 
             <h2>Wir könne auch <span>groß!</span></h2>
-            {privatServices.filter(serv => serv.size === "company").map((service, i,) => (
+            {privatServices.filter(serv => serv.size === "large").map((service, i,) => (
                 <ServiceCard key={i} service={service}/>
             ))
             }

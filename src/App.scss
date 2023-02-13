@@ -96,14 +96,14 @@ a{
       color: var(--primary);
     }
 
-    .fb{
-      color: #3c60ad;
-      font-size: 3.5rem;
-    }
+    // .fb{
+    //   color: #3c60ad;
+    //   font-size: 3.5rem;
+    // }
 
-    .fb:hover{
-      color: #1b6bd4;
-    }
+    // .fb:hover{
+    //   color: #1b6bd4;
+    // }
   }
 }
 
@@ -359,6 +359,10 @@ article{
     text-align: center;
     margin: 10rem 0 2.5rem 0;
   }
+
+  p{
+    font-size: large;
+  }
   
   span{
     font-size: 5rem;
@@ -383,33 +387,41 @@ article{
     }
   }
 
-  #pcard1{
-    background: url("/boden/bodenMain.jpg") center/cover;
+  //Small Services
+
+  #sCard1{
+    background: url("/boden/boden_main.jpg") center/cover;
   }
-  #pcard2{
-    background: url("/bg01.jpg") center/cover;
+  #sCard2{
+    background: url("/wand/wand_main.jpg") center/cover;
   }
-  #pcard3{
-    background: url("/außen/außenMain.jpg") center/cover;
+  #sCard3{
+    background: url("/außen/außen_main.jpg") center/cover;
   }
-  #pcard4{
-    background: url("/bg01.jpg") center/cover;
-  }
-  #pcard5{
-    background: url("/bg01.jpg") center/cover;
-  }
-  #pcard6{
-    background: url("/bg01.jpg") center/cover;
+  #sCard4{
+    background: url("/kamin/kamin_main.jpg") center/cover;
   }
 
-  #gcard1{
+  // Medium Services
+
+  #mCard1{
+    background: url("/sannierung/sannierung_main.jpg") center/cover;
+  }
+  #mCard3{
+    background: url("/sannierung/sannierung_main2.png") center/cover;
+  }
+  #mCard3{
+    background: url("/special/outofthebox.png") center/cover;
+  }
+  
+
+  // Large Services
+
+  #lCard1{
     background: url("/boden/bad/dachschräge_kl2.jpg") center/cover;
   }
-  #gcard2{
-    background: url("/hotel/lobbyMain.jpg") center/cover;
-  }
-  #gcard3{
-    background: url("/outofthebox.png") center/cover;
+  #lCard2{
+    background: url("/hotel/lobby_main.jpg") center/cover;
   }
 
   .cardTextblock{
@@ -547,6 +559,24 @@ article{
     }
     
   }
+}
+
+// CAREER
+
+.careerMenu{
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  text-align: center;
+
+  div{
+    width: 50%;
+    border: solid 0.2rem var(--companySecondary);
+  }
+} 
+
+.careerMenu:hover{
+  cursor: pointer;
 }
 
 
