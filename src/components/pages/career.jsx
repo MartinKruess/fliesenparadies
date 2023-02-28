@@ -57,7 +57,7 @@ export const CareerPage = () => {
                         <div className="jobContent">
                             <img src="/jobsuche.png" alt="" />
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium a consequatur culpa voluptas illum magni, odit ea nobis consequuntur aliquam sunt reprehenderit suscipit quibusdam tempore vero recusandae aut architecto!
+                                Dies ist ein Beispieltext, keine Panik ;)
                             </p>
                             <ul>
                                 <h2>Dein Profil</h2>
@@ -104,7 +104,7 @@ export const CareerPage = () => {
                     <div className="careerBase">
                     <h1>Die Ausbildung zum Fliesen-, Platten- und Mosaikleger (m,w,d)</h1>
                     <div className="jobContent">
-                        <img src="/fliesenleger_job.jpg" alt="" />
+                        <img src="/azubi.jpg" alt="" />
                         <ul className="azubiText side">
                             <h2>Wie läuft die Ausbildung ab?</h2>
                             <li>
