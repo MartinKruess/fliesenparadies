@@ -7,28 +7,21 @@ export const CardContainer = () => {
         {
             img: "sCard1",
             title: "Bodenbeläge",
-            text: "Küchen, Bäder & Flure",
+            text: "Küchen, Bäder, Flure und Saunen",
             size: "small",
         },
         {
             img: "sCard2",
             title: "Wandgestaltung",
-            text: "Wohn- & Arbeitszimmer in classisch Schick",
+            text: "Wohn- & Arbeitszimmer in klassisch Schick",
             size: "small",
         },
         {
             img: "sCard3",
             title: "Außenbereich",
-            text: "Terrassen, Balkone, Pools und Saunen",
+            text: "Terrassen, Balkone und Pools",
             size: "small",
         },
-        {
-            img: "sCard4",
-            title: "Kaminverkleidung",
-            text: "Kaminöfen für das gemütliche Ambiente",
-            size: "small",
-        },
-        
 
         // Sannierungen
         {
@@ -45,16 +38,16 @@ export const CardContainer = () => {
         },
         {
             img: "mCard3",
-            title: "Think out of the Box",
-            text: "Mosaikmuster & Sonderanfertigungen",
-            size: "medium",
+            title: "Mosaikmuster & Sonderanfertigungen",
+            text: "Think out of the Box",
+            size: "large",
         },
         
         // Mehrfamilienhaus, Groß- und Geschäftsaufträge
         {
             img: "lCard1",
             title: "Mehrfamilienhaus / Genossenschaften",
-            text: "Hausflure, Küchen, Bäder & mehr",
+            text: "Treppenhäuser, Küchen, Bäder & mehr",
             size: "large",
         },
         {
@@ -68,11 +61,21 @@ export const CardContainer = () => {
     return (
         <article className="cardConatiner">
             <div>
+                <h1>Gut geplant ist halb gebaut</h1>
                 <p>
-                    Planen Sie mit unserem 3D-Planer Ihr neues Projekt.
+                    Der Erfolg Ihres Projektes entscheidet sich bereits in der Planungsphase. Durch gemeinsames Planen werden viele Komplikationen und Kommunikationsfehler bereits vor Baubegin vermieden. So finden wir die passende Lösung für Ihr persönliches Projekt. Dies spart bare Münze.
                 </p>
+                <ul className="list">
+                    <h3>So finden wir gemeinsam einen Lösung</h3>
+                    <li>Beratung</li>
+                    <li>Vor Ort Analyse</li>
+                    <li>Kalkulationen</li>
+                    <li>Kostenvoranschlag</li>
+                    <li>Wir finden gemeinsam eine Lösung</li>
+                    <li>Umsetzung</li>
+                </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aperiam vel modi tenetur voluptatem? Ipsum perspiciatis ab consectetur sit necessitatibus eligendi quisquam impedit aliquid ex ipsa, distinctio, deleniti reiciendis suscipit.
+                    Wir unterstützen Sie von der Planung bis zur Ausführung.
                 </p>
             </div>
             

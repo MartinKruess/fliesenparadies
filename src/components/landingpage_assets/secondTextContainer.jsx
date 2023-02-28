@@ -1,10 +1,16 @@
 export const SecondTextContainer = () => {
     return(
         <div className="textblock">
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eaque.</h2>
+            <h2>Nicht jede Fliese ist für jede Anforderung geeignet</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, obcaecati? Vel eos quidem praesentium qui, ex officia cum laborum maiores, consequuntur aliquam at! Sequi excepturi velit est amet error repudiandae?
+                Wir führen Fliesen aus unterschiedlichen Materialen, die neben der optischen Beschaffenheit auch für spezielle Aufgaben hergestellt werden.
             </p>
+            <ul className='list'>
+                <li>Frostsicherheit</li>
+                <li>Abriebfestigkeit</li>
+                <li>Wasseraufnahmevermögen</li>
+                <li>Wärmeleitfähigkeit</li>
+            </ul>
         </div>
     )
 }

@@ -6,7 +6,7 @@ export const History = () => {
                     <div className="historyText">
                         <h3>01.09.1969 - Wie alles began!</h3>
                         <p>
-                            Der Fliesen-, Platten- und Mosaiklegermeister Karl-Heinz Voß macht sich selbständig. Mit einer Handvoll Fliesen fuhr er von Haus zu Haus
+                            Der Fliesen-, Platten- und Mosaiklegermeister Karl-Heinz Voß macht sich selbständig und gründetet Fliesenparadies Voß. Mit einer Handvoll Fliesen fuhr er von Haus zu Haus
                         </p>
                         <br /><hr /><br />
                         <h3>01.09.1971 - Zusammen sind wir stark</h3>
@@ -63,6 +63,8 @@ export const History = () => {
                         <p>
                             Sebastian Voß beendet seine Ausbildung zum Betriebswirt im Handwerk erfolgreich und wird zum Geschäftsführer bestellt
                         </p>
+                        <h3>2019 - 50 Jahre Fliesenparedies Voß</h3>
+                        <h3>2022 - Sebastian Voß Fortbildung zum Sachverständigen</h3>
                     </div>
                     <div className="imgBox">
                         <img src="/history/RalfMeistersteuck.jpg"  alt="" />

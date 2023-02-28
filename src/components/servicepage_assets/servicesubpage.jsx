@@ -1,8 +1,9 @@
+import { useParams } from "react-router";
 import { CardContainer } from "./cardcontainer"
 
-export const ServiceSubPage = (title) => {
-
-    switch (title) {
+export const ServiceSubPage = () => {
+    const params = useParams()
+    switch (params.service) {
         case "Bodenbeläge":
             return(
                 <section>
@@ -12,10 +13,15 @@ export const ServiceSubPage = (title) => {
                     </div>    
                 </section>
             )
-            break;
         case "Wandgestaltung":
-            
-            break;
+            return(
+            <section>
+                    
+                    <div>
+                        TEST 123
+                    </div>    
+            </section>
+            )
         case "Außenbereich":
             
             break;
@@ -39,11 +45,15 @@ export const ServiceSubPage = (title) => {
             break;
 
         default:
+            return(
+                <section>
+                    <div>
+                        404
+                    </div>    
+                </section>
+            )
             break;
     }
 
-    console.log("ServiceSubPages found!")
-
-
-    
+    console.log("ServiceSubPages found!", params)
 }

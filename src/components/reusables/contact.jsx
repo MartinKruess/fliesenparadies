@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { ContactBG } from "../contact_assets/contactbg"
-//import { ContactUs } from "../contact_assets/contact_logic"
 import { ContactReason } from "../contact_assets/contact_reason"
 
 
@@ -16,7 +15,7 @@ export const Contact = () => {
             
             <div className="contactContainer">
                 <div onClick={() => setContactActive(!contactActive)}>
-                    <p>Kontakt:</p>
+                    <p>Kontakt</p>
                     <p><i className="fa-solid fa-comments"></i></p>
                 </div>
                 
@@ -25,7 +24,6 @@ export const Contact = () => {
             <div>
                 <ContactBG setContactActive={setContactActive} />
                 <ContactReason setContactActive={setContactActive}/>
-                {/* <ContactUs /> */}
             </div>}
         </>
     )

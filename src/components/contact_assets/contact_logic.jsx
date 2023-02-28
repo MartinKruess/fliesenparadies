@@ -18,10 +18,9 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} className="formContainer" onSubmit={sendEmail}>
-      <input type="text" name="from_name" />
-      <input type="email" name="email_id" />
-      <textarea name="message" />
-      <input type="file" name="my_file" accept="image/*" multiple />
+      <input type="text" name="from_name" placeholder="Max Mustermann" required/>
+      <input type="email" name="email_id" placeholder="Kontakt E-mail" required/>
+      <textarea name="message" placeholder="Ihre Anfrage" required/>
       <input type="submit" value="Unverbindliche Anfrage Senden" />
     </form>
   );

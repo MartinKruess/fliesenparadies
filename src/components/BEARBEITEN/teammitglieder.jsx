@@ -46,7 +46,7 @@ export const teammitglieder = [
     {
         name: "Zayideen Hussain",
         gruppe: "Azubi",
-        bild: "/team/MaxMustermann.png",
+        bild: "/team/ZayideenHussain2.jpg",
     },
     {
         name: "Daniel Rynduch",
