@@ -63,11 +63,18 @@ export const History = () => {
                         <p>
                             Sebastian Voß beendet seine Ausbildung zum Betriebswirt im Handwerk erfolgreich und wird zum Geschäftsführer bestellt
                         </p>
-                        <h3>2019 - 50 Jahre Fliesenparedies Voß</h3>
-                        <h3>2022 - Sebastian Voß Fortbildung zum Sachverständigen</h3>
                     </div>
                     <div className="imgBox">
                         <img src="/history/RalfMeistersteuck.jpg"  alt="" />
+                    </div>
+                </div>
+                <div className="historyArticle">
+                    <div className="imgBox">
+                        <img src="/history/Jubiläum50.jpg"  alt="" />
+                    </div>
+                    <div className="historyText">
+                        <h3>2019 - 50 Jahre Fliesenparedies Voß</h3>
+                        <h3>2022 - Sebastian Voß Fortbildung zum Sachverständigen</h3>
                     </div>
                 </div>
             </div>

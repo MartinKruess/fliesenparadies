@@ -4,7 +4,7 @@ import { Team } from "../company_assets/team"
 export const Company = () => {
     return(
         <section>
-            <TopCarousel />
+            <TopCarousel id={1} />
             <Team />
         </section>
     )

@@ -6,7 +6,7 @@ export const Footer = () => {
             <div className="footContainer">
                 <div className="footerLeft">
                     <div>
-                        Fliesenparadies K.-H. Voß GmbH <br />
+                        Fliesenparadies K.-H. Voß Handels-GmbH <br />
                         Werner-von-Siemens-Str. 9 <br />
                         25479 Ellerau <br /> <br />
                     </div>
@@ -16,10 +16,12 @@ export const Footer = () => {
                         E-Mail: khv@fliesenparadies-voss.de <br />
                     </div>
                 </div>
-                <div className="footerBottom">
+                <div className="footerMiddle">
                     <div><img src="/zertifikat_fachverband.jpg" alt="" /></div>
                     <div><img src="/zertifikat_meisterhaft.jpg" alt="" /></div>
-                    <div><img src="/zertifikat_partner.png" alt="" /></div>
+                    <div><img src="/zertifikat_partner.png" alt="" />
+                    </div>
+                    <div><img src="/zertifikat_pq.gif" alt="" /></div>
                 </div>
                 <div className="footerBottom">
                     <div><Link to="/impressum">Impressum</Link> </div>

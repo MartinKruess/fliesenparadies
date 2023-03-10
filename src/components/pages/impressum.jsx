@@ -6,7 +6,7 @@ export const Impressum = () => {
                 <div>
                     <strong>Angaben gem. § 5 TMG:</strong>
                     <p>
-                        Fliesenparadies K.-H. Voß GmbH <br />
+                        Fliesenparadies K.-H. Voß Handels-GmbH <br />
                         Werner-von-Siemens-Str. 9 <br />
                         25479 Ellerau
                     </p>
@@ -28,7 +28,10 @@ export const Impressum = () => {
                         Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz:
                     </strong>
                     <p>
-                        St.-Nr. 11/296/01625
+                        Ust.-ID: DE 11 296 01625
+                    </p>
+                    <p>
+                        Ust.-Nr. 11/296/01625
                     </p>
                 </div>
             </article>

@@ -24,7 +24,7 @@ export const Team = () => {
             {menu === 'team' &&
             <>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore? Necessitatibus ipsum repellat quaerat, obcaecati qui accusantium blanditiis exercitationem explicabo debitis perferendis! Veritatis distinctio recusandae adipisci repudiandae ducimus reiciendis sunt.
+                  
               </p>
               <h2>Office Team/Projektleitung</h2>
               {teammitglieder.map((mitglied, i) => mitglied.gruppe.includes('Office') && (
