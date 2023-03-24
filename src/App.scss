@@ -707,8 +707,6 @@ article{
               border-radius: 0.5rem;
             }
           }
-
-          
         }
       }
 
@@ -1031,6 +1029,16 @@ footer{
           h2{
             width: 100%;
             margin-bottom: 2rem;
+          }
+        }
+
+        .side{
+          .anzeige{
+            flex-wrap: wrap;
+
+            div{
+              width: 100%;
+            }
           }
         }
       }

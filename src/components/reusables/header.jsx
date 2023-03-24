@@ -15,7 +15,6 @@ export const Header = () => {
             <a href="mailto:khv@fliesenparadies-voss.de">
                 <i className="fa-regular fa-envelope"></i>
             </a>
-                <i className="fa-solid fa-gears"></i>
         </div>
     </section>
     )
