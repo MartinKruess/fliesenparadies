@@ -2,25 +2,40 @@
 
 export const FeedbackContainer = () => {
 
-    const reviews = "https://serpapi.com/search?engine=google_maps_reviews"
-    const api_key = "7f643e5e2dc4e0c3c486cfec2f97f98abbc1d09eedf511bce7a55444ecd462f0"
-    const engine = "google_maps_reviews"
-    const search_id = "6406e5661988e5f6f5a46587"
-    const data_id = ""
+    const [reviews, setReviews] = ([])
 
-    //console.log(feedbacks)
+    // IS working!
 
-    const fetchData = async (url, engine, api_key) => {
-        const res = await fetch(url, engine, api_key)
-        const data = await res.json()
-        console.log(data)
-    }
+    // const reviews = "https://serpapi.com/search?engine=google_maps_reviews"
+    // const engine = "google_maps_reviews"
+    // const data_id = "6406e5661988e5f6f5a46587" Meine -> austauschen
+    // const url = `${reviews}&data_id=${data_id}`
+    // console.log("URL", url)
 
-    //fetchData(reviews)
+    // //console.log(feedbacks)
+
+    // const fetchData = async (url) => {
+    //     const res = await fetch(url)
+    //     const data = await res.json()
+    //     console.log(data)
+    // }
+
+    //fetchData(url)
 
     // setInterval(() => {
     //     fetchData(reviews)
     // }, 86400000);
+
+    // fetch Data from backend ip/googlereviews_fleisenparadies
+    const fetchURL = "localshost:5000/grv_fp"
+
+    const fetchReviews = async (fetchURL) => {
+        const res = await fetch(fetchURL)
+        const fetchedReviews = await res.json()
+        setReviews(fetchedReviews)
+    }
+
+   // data
     
 
 

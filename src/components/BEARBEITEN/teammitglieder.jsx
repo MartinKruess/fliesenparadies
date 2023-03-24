@@ -1,5 +1,18 @@
 export const teammitglieder = [
+    /*
+    Damit alle Mitarbeiter Bilder gleich aussehen habe ich folgende Werte bei jedem Bild eingehalten:
+    Höhe: 1000px
+    Breite: 700px
+    Die Höhe des Kopfes muss bei jedem Bild händisch angepasst werden, damit alle Bilder in etwa gleich aussehen.
 
+    ANLEGEN EINES NEUEN MITARBEITERS!
+    Ein Neuer Mitarbeiter benötigt folgende Angaben um in der richtigen Gruppe zugeordet zu werden:
+    {
+        name: "Name des Mitarbeiters",
+        gruppe: "Fliesenleger", "Office", "Azibi", "Bauhelfer" oder "Partner",
+        bild: "/team/Bildname.Dateiendung (jpg, jpeg, png, gif, ...)",
+    },
+    */
     {
         name: "Carsten Hemp",
         gruppe: "Fliesenleger",
@@ -56,7 +69,7 @@ export const teammitglieder = [
     {
         name: "Heinrich Lewanski",
         gruppe: "Bauhelfer",
-        bild: "/team/MaxMustermann.png",
+        bild: "/team/HeinrichLewanski.png",
     },
     {
         name: "Osman Jakupi",

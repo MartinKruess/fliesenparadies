@@ -27,7 +27,9 @@ export const CareerPage = () => {
                         <div className="careerBase">
                             <h1>Wir suchen Verstärkung!</h1>
                             <div className="jobContent">
-                                <img src="/fliesenleger_job.jpg" alt="" />
+                                <div className="jobImg">
+                                    <img src="/fliesenleger_job.jpg" alt="" />
+                                </div>
                                 <ul className="azubiText">
                                     <h2>Was macht eigentlich ein Fliesenleger?</h2>
                                     <li>
@@ -58,10 +60,10 @@ export const CareerPage = () => {
                         <div className="careerBase">
                             <h1>Wir suchen ambitionierte Mitarbeiter</h1>
                             <div className="jobContent">
-                                <img src="/jobsuche.png" alt="" />
-                                <p>
-
-                                </p>
+                                <div className="jobImg">
+                                    <img src="/jobsuche.png" alt=""/>
+                                </div>
+                                <p></p>
                                 <ul>
                                     <h2>Dein Profil</h2>
                                     <li>
@@ -107,7 +109,9 @@ export const CareerPage = () => {
                         <div className="careerBase">
                         <h1>Die Ausbildung zum Fliesen-, Platten- und Mosaikleger (m,w,d)</h1>
                         <div className="jobContent">
-                            <img src="/azubi.jpg" alt="" />
+                            <div className="jobImg">
+                                <img className="azubiIMG" src="/azubi.jpg" alt="" />
+                            </div>
                             <ul className="azubiText side">
                                 <h2>Wie läuft die Ausbildung ab?</h2>
                                 <li>
