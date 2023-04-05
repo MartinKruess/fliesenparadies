@@ -4,51 +4,70 @@ import { CardContainer } from "./cardcontainer"
 export const ServiceSubPage = () => {
     const params = useParams()
     switch (params.service) {
-        case "Bodenbeläge":
+        case "boden":
             return(
-                <section>
-                    <CardContainer />
-                    <div>
-                        TEST
-                    </div>    
+                <section className="service">
+                    <aside>
+                        <CardContainer />
+                    </aside>
+                    <article>
+                        Bodenbeläge
+                    </article>    
                 </section>
             )
-        case "Wandgestaltung":
+        case "wand":
             return(
             <section>
-                    
                     <div>
-                        TEST 123
+                        Wandgestaltung
                     </div>    
             </section>
             )
-        case "Außenbereich":
-            
-            break;
-        case "Kaminverkleidung":
-            
-            break;
-        case "Sannierungsarbeiten":
-            
-            break;
-        case "Überfliesen":
-            
-            break;
-        case "Think out of the Box":
-            
-            break;
-        case "Mehrfamilienhaus / Genossenschaften":
-            
-            break;
-        case "Großraumsannierung":
-            
-            break;
-
+        case "ausen":
+            return(
+                <section>
+                        <div>
+                            Außenbereich
+                        </div>    
+                </section>
+                )
+        case "rep":
+            return(
+                <section>
+                        <div>
+                            Sannierungsarbeiten
+                        </div>    
+                </section>
+                )
+        case "special":
+            return(
+                <section>
+                        <div>
+                            Think out of the Box
+                        </div>    
+                </section>
+                )
+        case "genossenschaft":
+            return(
+                <section> 
+                        <div>
+                            Mehrfamilienhaus / Genossenschaften
+                        </div>    
+                </section>
+                )
+        case "repbig":
+            return(
+                <section>
+                        <div>
+                            Großraumsannierung
+                        </div>    
+                </section>
+                )
         default:
             return(
                 <section>
                     <div>
-                        404
+                        404 keine Seite gefunden!
                     </div>    
                 </section>
             )

@@ -450,6 +450,25 @@ article{
   #mCard3{
     background: url("/special/outofthebox.png") center/cover;
   }
+
+  .service{
+    width: 80%;
+    display: flex;
+    margin: auto;
+
+    aside{
+      width: 25%;
+      min-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      border: solid;
+    }
+
+    article{
+      width: 75%;
+      border: solid;
+    }
+  }
   
 
   // Large Services

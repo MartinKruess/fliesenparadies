@@ -7,18 +7,21 @@ export const CardContainer = () => {
         {
             img: "sCard1",
             title: "Bodenbeläge",
+            group: "boden",
             text: "Küchen, Bäder, Flure und Saunen",
             size: "small",
         },
         {
             img: "sCard2",
             title: "Wandgestaltung",
+            group: "wand",
             text: "Wohn- & Arbeitszimmer in klassisch Schick",
             size: "small",
         },
         {
             img: "sCard3",
             title: "Außenbereich",
+            group: "ausen",
             text: "Terrassen, Balkone und Pools",
             size: "small",
         },
@@ -26,35 +29,33 @@ export const CardContainer = () => {
         // Sannierungen
         {
             img: "mCard1",
-            title: "Sannierungsarbeiten",
+            title: "Sannierungsarbeiten / Überfliesen",
+            group: "rep",
             text: "Reperaturen & optische Aufwertungen",
             size: "medium",
         },
         {
-            img: "mCard2",
-            title: "Überfliesen",
-            text: "Eine schnelle und saubere Lösung",
-            size: "medium",
-        },
-        {
             img: "mCard3",
-            title: "Mosaikmuster & Sonderanfertigungen",
+            title: "Mosaikmuster / Sonderanfertigungen",
+            group: "special",
             text: "Think out of the Box",
-            size: "large",
+            size: "medium",
         },
         
         // Mehrfamilienhaus, Groß- und Geschäftsaufträge
         {
             img: "lCard1",
             title: "Mehrfamilienhaus / Genossenschaften",
+            group: "genossenschaft",
             text: "Treppenhäuser, Küchen, Bäder & mehr",
             size: "large",
         },
         {
             img: "lCard2",
             title: "Großraumsannierung",
+            group: "repBig",
             text: "Eingangshallen, Schwimmbäder, Umkleiden",
-            size: "large",
+            size: "medium",
         },
     ]
 
@@ -66,7 +67,7 @@ export const CardContainer = () => {
                     Der Erfolg Ihres Projektes entscheidet sich bereits in der Planungsphase. Durch gemeinsames Planen werden viele Komplikationen und Kommunikationsfehler bereits vor Baubegin vermieden. So finden wir die passende Lösung für Ihr persönliches Projekt. Dies spart bare Münze.
                 </p>
                 <ul className="list">
-                    <h3>So finden wir gemeinsam einen Lösung</h3>
+                    <h2>So finden wir gemeinsam einen Lösung</h2>
                     <li>Beratung</li>
                     <li>Vor Ort Analyse</li>
                     <li>Kalkulationen</li>

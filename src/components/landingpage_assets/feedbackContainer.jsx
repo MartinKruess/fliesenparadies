@@ -27,13 +27,13 @@ export const FeedbackContainer = () => {
     // }, 86400000);
 
     // fetch Data from backend ip/googlereviews_fleisenparadies
-    const fetchURL = "localshost:5000/grv_fp"
+    // const fetchURL = "localshost:5000/grv_fp"
 
-    const fetchReviews = async (fetchURL) => {
-        const res = await fetch(fetchURL)
-        const fetchedReviews = await res.json()
-        setReviews(fetchedReviews)
-    }
+    // const fetchReviews = async (fetchURL) => {
+    //     const res = await fetch(fetchURL)
+    //     const fetchedReviews = await res.json()
+    //     setReviews(fetchedReviews)
+    // }
 
    // data
     
