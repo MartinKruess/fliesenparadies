@@ -1136,3 +1136,25 @@ footer{
     }
   }
 }
+
+
+.baustelle{
+  text-align: center;
+  margin: auto;
+
+  div{
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    p{
+      width: 100%;
+      font-size: 3.5rem;
+    }
+
+    img{
+      width: 30%;
+    }
+  }
+}

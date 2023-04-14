@@ -6,69 +6,95 @@ export const ServiceSubPage = () => {
     switch (params.service) {
         case "boden":
             return(
-                <section className="service">
-                    <aside>
-                        <CardContainer />
-                    </aside>
-                    <article>
-                        Bodenbeläge
-                    </article>    
+                <section className="service">                     
+                    <div>
+                        <p>Bodenbeläge</p>
+                        <p>Hier wird noch gearbeitet!</p>
+                    </div>
+                    <div>
+                        <img src="/baustelle.jpg" alt="" />
+                    </div>  
                 </section>
             )
         case "wand":
             return(
-            <section>
+                <section>    
                     <div>
-                        Wandgestaltung
-                    </div>    
-            </section>
+                        <p>Wandgestaltung</p>
+                        <p>Hier wird noch gearbeitet!</p>
+                    </div>
+                    <div>
+                        <img src="/baustelle.jpg" alt="" />
+                    </div> 
+                </section>
             )
         case "ausen":
             return(
                 <section>
                         <div>
-                            Außenbereich
-                        </div>    
+                            <p>Außenbereich</p>
+                            <p>Hier wird noch gearbeitet!</p>
+                        </div>
+                        <div>
+                            <img src="/baustelle.jpg" alt="" />
+                        </div> 
                 </section>
                 )
         case "rep":
             return(
                 <section>
                         <div>
-                            Sannierungsarbeiten
-                        </div>    
+                            <p>Sannierungsarbeiten</p>
+                            <p>Hier wird noch gearbeitet!</p>
+                        </div>
+                        <div>
+                            <img src="/baustelle.jpg" alt="" />
+                        </div> 
                 </section>
                 )
         case "special":
             return(
                 <section>
                         <div>
-                            Think out of the Box
-                        </div>    
+                            <p>Think out of the Box</p>
+                            <p>Hier wird noch gearbeitet!</p>
+                        </div>
+                        <div>
+                            <img src="/baustelle.jpg" alt="" />
+                        </div> 
                 </section>
                 )
         case "genossenschaft":
             return(
                 <section> 
                         <div>
-                            Mehrfamilienhaus / Genossenschaften
-                        </div>    
+                            <p>Mehrfamilienhaus / Genossenschaften</p>
+                            <p>Hier wird noch gearbeitet!</p>
+                        </div>
+                        <div>
+                            <img src="/baustelle.jpg" alt="" />
+                        </div> 
                 </section>
                 )
         case "repbig":
             return(
-                <section>
+                <section className="baustelle">
                         <div>
-                            Großraumsannierung
-                        </div>    
+                            <p>Großraumsannierung</p>
+                            <p>Hier wird noch gearbeitet!</p>
+                        </div>
+                        <div>
+                            <img src="/baustelle.jpg" alt="" />
+                        </div>
                 </section>
                 )
         default:
             return(
                 <section>
-                    <div>
-                        404 keine Seite gefunden!
-                    </div>    
+                    <div className="error">
+                        ERROR 404
+                        <p>keine Seite gefunden!</p>
+                    </div>   
                 </section>
             )
             break;
