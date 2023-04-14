@@ -185,10 +185,10 @@ export const CareerPage = () => {
                                             Feste Arbeitszeiten
                                         </p>
                                         <p>
-                                            Körperlich anspruchsvoll
+                                            Umfeld: Baustelle
                                         </p>
                                         <p>
-                                            Umfeld: Baustelle
+                                            Körperliche Tätigkeit
                                         </p>
                                     </div>
                                 </div>
