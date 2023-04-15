@@ -6,7 +6,7 @@ import { SecondArticle } from "../landingpage_assets/secondArticle"
 export const Landingpage = () => {
     return(
         <section>
-            <TopCarousel id={0}/>
+            <TopCarousel id={1}/>
             <FeedbackContainer />
             <FirstArticle />
             <SecondArticle />

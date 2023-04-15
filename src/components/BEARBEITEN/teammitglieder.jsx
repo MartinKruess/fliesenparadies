@@ -38,7 +38,7 @@ export const teammitglieder = [
     {
         name: "Bilal Kaka Hama",
         gruppe: "Fliesenleger",
-        bild: "/team/BilalKakaHama.jpg",
+        bild: "/team/BilalKakaHama2.jpg",
     },
     {
         name: "Sebastian Voß",

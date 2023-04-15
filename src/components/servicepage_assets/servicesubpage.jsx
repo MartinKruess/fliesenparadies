@@ -4,7 +4,7 @@ import { CardContainer } from "./cardcontainer"
 export const ServiceSubPage = () => {
     const params = useParams()
     switch (params.service) {
-        case "boden":
+        case "bodenfliesen":
             return(
                 <section className="service">                     
                     <div>
@@ -16,7 +16,7 @@ export const ServiceSubPage = () => {
                     </div>  
                 </section>
             )
-        case "wand":
+        case "wandfliesen":
             return(
                 <section>    
                     <div>
@@ -28,7 +28,7 @@ export const ServiceSubPage = () => {
                     </div> 
                 </section>
             )
-        case "ausen":
+        case "ausenfliesen":
             return(
                 <section>
                         <div>
@@ -40,7 +40,7 @@ export const ServiceSubPage = () => {
                         </div> 
                 </section>
                 )
-        case "rep":
+        case "sannierung":
             return(
                 <section>
                         <div>
@@ -74,18 +74,6 @@ export const ServiceSubPage = () => {
                         <div>
                             <img src="/baustelle.jpg" alt="" />
                         </div> 
-                </section>
-                )
-        case "repbig":
-            return(
-                <section className="baustelle">
-                        <div>
-                            <p>Großraumsannierung</p>
-                            <p>Hier wird noch gearbeitet!</p>
-                        </div>
-                        <div>
-                            <img src="/baustelle.jpg" alt="" />
-                        </div>
                 </section>
                 )
         default:
