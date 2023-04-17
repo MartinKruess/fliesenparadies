@@ -460,19 +460,15 @@ article{
     display: flex;
     margin: auto;
 
-    aside{
-      width: 25%;
-      min-width: 20rem;
-      display: flex;
-      flex-direction: column;
-      border: solid;
-    }
-
-    article{
-      width: 75%;
-      border: solid;
+    .serviceImages{
+      border:solid;
+      img{
+        width: 4rem;
+      }
     }
   }
+
+  
   
 
   // Large Services

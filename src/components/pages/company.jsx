@@ -15,7 +15,7 @@ export const Company = () => {
 
     return(
         <section>
-             <TopCarousel id={1} />
+             <TopCarousel id={2} />
              <article className="teamSinglePreview">
                 <div className="switchMenu">
                     <div onClick={() => setMenu(true)}

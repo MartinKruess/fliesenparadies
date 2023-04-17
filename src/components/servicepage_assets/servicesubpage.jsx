@@ -11,8 +11,10 @@ export const ServiceSubPage = () => {
                         <p>Bodenbeläge</p>
                         <p>Hier wird noch gearbeitet!</p>
                     </div>
-                    <div>
-                        <img src="/baustelle.jpg" alt="" />
+                    <div className="serviceImages">
+                        <img src="/boden/boden0.jpg" alt="" />
+                        <img src="/boden/marmorfliesen.jpg" alt="" />
+                        <img src="/boden/dunkelgrauer-mosaikfliesen.jpg" alt="" />
                     </div>  
                 </section>
             )

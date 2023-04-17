@@ -4,17 +4,24 @@ import { useEffect, useState } from "react"
 export const TopCarousel = (props) => {
     const [index, setIndex] = useState(0)
     const images = [
-        {
-            name: "header.jpg",
-            header: "Familienbetrieb Voß",
-            text: "",
-            width: "25rem",
-        },
+        
         {
             name: "Headerbild01.jpg",
             header: "Das Team!",
             text: "",
             width: "30rem",
+        },
+        {
+            name: "services.png",
+            header: "",
+            text: "",
+            width: "35rem",
+        },
+        {
+            name: "header.jpg",
+            header: "Familienbetrieb Voß",
+            text: "",
+            width: "25rem",
         },
         {
             name: "jobs.png",
@@ -33,11 +40,12 @@ export const TopCarousel = (props) => {
     return(
         <article>
             <div className="carouselContainer">
-                <img src={images[index].name}/>
+                <img src={images[index].name} alt="Titlebild" />
+                {images[index].header &&
                 <div className="textContainer" style={{minWidth: images[index].width}}>
                     <h1><strong>{images[index].header}</strong></h1>
                     <p>{images[index].text}</p>
-                </div>
+                </div>}
             </div>
         </article>
     )

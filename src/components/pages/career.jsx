@@ -12,7 +12,7 @@ export const CareerPage = () => {
 
     return(
         <section>
-            <TopCarousel id={2} />
+            <TopCarousel id={3} />
             <article>
                 <div className="careerMenu">
                     <div onClick={() => handleToggle('base')}
