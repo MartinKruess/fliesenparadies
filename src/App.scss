@@ -431,6 +431,21 @@ article{
     }
   }
 
+  article{
+    .serviceImages{
+      width: 15rem;
+      border: solid;
+
+      div{
+        border:solid;
+
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
+
   //Small Services
 
   #sCard1{
@@ -455,21 +470,6 @@ article{
     background: url("/special/outofthebox.png") center/cover;
   }
 
-  .service{
-    width: 80%;
-    display: flex;
-    margin: auto;
-
-    .serviceImages{
-      border:solid;
-      img{
-        width: 4rem;
-      }
-    }
-  }
-
-  
-  
 
   // Large Services
 

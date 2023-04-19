@@ -6,21 +6,30 @@ export const ServiceSubPage = () => {
     switch (params.service) {
         case "bodenfliesen":
             return(
-                <section className="service">                     
+                <article>                     
                     <div>
                         <p>Bodenbeläge</p>
-                        <p>Hier wird noch gearbeitet!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita inventore magnam perspiciatis iste ad vel eos voluptas sint numquam facilis reiciendis delectus repellat consectetur, eligendi commodi in adipisci praesentium tenetur quos veniam neque corporis? Veniam ea quidem inventore nulla, minus ipsa qui accusamus, rerum iusto vero expedita suscipit dignissimos totam.</p>
                     </div>
                     <div className="serviceImages">
-                        <img src="/boden/boden0.jpg" alt="" />
-                        <img src="/boden/marmorfliesen.jpg" alt="" />
-                        <img src="/boden/dunkelgrauer-mosaikfliesen.jpg" alt="" />
+                        <div>
+                            <img src="/boden/boden0.jpg" alt="" />
+                            <span>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quasi enim sunt ducimus. Blanditiis, quia temporibus praesentium laboriosam odit quisquam accusamus corporis cum quidem recusandae hic alias reiciendis ipsam officiis!
+                            </span>
+                        </div>
+                        <div>
+                            <img src="/boden/marmorfliesen.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="/boden/dunkelgrauer-mosaikfliesen.jpg" alt="" />
+                        </div>
                     </div>  
-                </section>
+                </article>
             )
         case "wandfliesen":
             return(
-                <section>    
+                <article>    
                     <div>
                         <p>Wandgestaltung</p>
                         <p>Hier wird noch gearbeitet!</p>
@@ -28,11 +37,11 @@ export const ServiceSubPage = () => {
                     <div>
                         <img src="/baustelle.jpg" alt="" />
                     </div> 
-                </section>
+                </article>
             )
         case "ausenfliesen":
             return(
-                <section>
+                <article>
                         <div>
                             <p>Außenbereich</p>
                             <p>Hier wird noch gearbeitet!</p>
@@ -40,11 +49,11 @@ export const ServiceSubPage = () => {
                         <div>
                             <img src="/baustelle.jpg" alt="" />
                         </div> 
-                </section>
+                </article>
                 )
         case "sannierung":
             return(
-                <section>
+                <article>
                         <div>
                             <p>Sannierungsarbeiten</p>
                             <p>Hier wird noch gearbeitet!</p>
@@ -52,11 +61,11 @@ export const ServiceSubPage = () => {
                         <div>
                             <img src="/baustelle.jpg" alt="" />
                         </div> 
-                </section>
+                </article>
                 )
         case "special":
             return(
-                <section>
+                <article>
                         <div>
                             <p>Think out of the Box</p>
                             <p>Hier wird noch gearbeitet!</p>
@@ -64,11 +73,11 @@ export const ServiceSubPage = () => {
                         <div>
                             <img src="/baustelle.jpg" alt="" />
                         </div> 
-                </section>
+                </article>
                 )
         case "genossenschaft":
             return(
-                <section> 
+                <article> 
                         <div>
                             <p>Mehrfamilienhaus / Genossenschaften</p>
                             <p>Hier wird noch gearbeitet!</p>
@@ -76,16 +85,16 @@ export const ServiceSubPage = () => {
                         <div>
                             <img src="/baustelle.jpg" alt="" />
                         </div> 
-                </section>
+                </article>
                 )
         default:
             return(
-                <section>
+                <article>
                     <div className="error">
                         ERROR 404
                         <p>keine Seite gefunden!</p>
                     </div>   
-                </section>
+                </article>
             )
             break;
     }
