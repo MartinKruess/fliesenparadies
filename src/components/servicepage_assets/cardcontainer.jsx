@@ -35,7 +35,7 @@ export const CardContainer = () => {
             size: "medium",
         },
         {
-            img: "lCard2",
+            img: "sCard2",
             title: "Großraumsannierung",
             group: "sannierung",
             text: "Eingangshallen, Schwimmbäder, Umkleiden",

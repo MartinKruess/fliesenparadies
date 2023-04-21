@@ -183,24 +183,6 @@ font-size: 1.3rem;
 padding: 0 0.7rem 0 0;
 }
 
-@media screen and (max-width: 700px) {
-  nav{
-    height: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1.3rem 0;
-
-    .burger{
-      display: block;
-      align-self: end;
-    }
-
-    .burger:hover::before{
-      transform: scaleX(0);
-    }
-  }
-}
-
 article{
   //background-color: var(--primary);
   width: 80%;
@@ -223,23 +205,16 @@ article{
     .textContainer{
       background-color: var(--company);
       color: var(--primary);
-      min-width: 30rem;
-      padding: 0 1rem;
+      padding: 0 0.5rem;
       position: absolute;
       top: 0rem;
       clip-path: polygon(0 0, 100% 1%, 64% 100%, 0% 100%);
 
       h1{
         width: 85%;
-        font-size: 2.2rem;
-        margin-right: 2rem;
+        font-size: 120%;
+        margin-right: 4rem;
         padding-left: 1rem;
-      }
-
-      p{
-        width: 70%;
-        margin-right: 2rem;
-        font-weight: 500;
       }
     }
 }  
@@ -407,6 +382,7 @@ article{
 
   p{
     font-size: 1.6rem;
+    
   }
   
   span{
@@ -431,21 +407,6 @@ article{
     }
   }
 
-  article{
-    .serviceImages{
-      width: 15rem;
-      border: solid;
-
-      div{
-        border:solid;
-
-        img{
-          width: 50%;
-        }
-      }
-    }
-  }
-
   //Small Services
 
   #sCard1{
@@ -455,7 +416,7 @@ article{
     background: url("/wand/wand_main.jpg") center/cover;
   }
   #sCard3{
-    background: url("/außen/außen_main.jpg") center/cover;
+    background: url("/aussen/aussen_main.jpg") center/cover;
   }
 
   // Medium Services
@@ -467,16 +428,10 @@ article{
     background: url("/sannierung/sannierung_main2.png") center/cover;
   }
   #mCard3{
-    background: url("/special/outofthebox.png") center/cover;
+    background: url("/special/outofthebox_main.png") center/cover;
   }
-
-
-  // Large Services
-
+  
   #lCard1{
-    background: url("/boden/bad/dachschräge_kl2.jpg") center/cover;
-  }
-  #lCard2{
     background: url("/hotel/lobby_main.jpg") center/cover;
   }
 
@@ -962,6 +917,10 @@ footer{
     }
   }
 
+  .textContainer{
+    display: none;
+  }
+
   footer{
 
     .footContainer{
@@ -1061,6 +1020,24 @@ footer{
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav{
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.3rem 0;
+
+    .burger{
+      display: block;
+      align-self: end;
+    }
+
+    .burger:hover::before{
+      transform: scaleX(0);
     }
   }
 }
