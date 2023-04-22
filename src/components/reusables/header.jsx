@@ -2,7 +2,7 @@ export const Header = () => {
     return(
     <section className="header">
         <div className="logoContainer">
-            <img src="/raute.png" alt="" />
+            <img src="/raute.png" alt="Firmenlogo" />
             <h1>Fliesenparadies Voß</h1>
         </div>
         <div className="fastContact">

@@ -38,7 +38,7 @@ export const teammitglieder = [
     {
         name: "Bilal Kaka Hama",
         gruppe: "Fliesenleger",
-        bild: "/team/BilalKakaHama2.jpg",
+        bild: "/team/BilalKakaHama.jpg",
     },
     {
         name: "Sebastian Voß",
@@ -59,7 +59,7 @@ export const teammitglieder = [
     {
         name: "Zayideen Hussain",
         gruppe: "Azubi",
-        bild: "/team/ZayideenHussain2.jpg",
+        bild: "/team/ZayideenHussain.jpg",
     },
     {
         name: "Daniel Rynduch",
@@ -69,7 +69,7 @@ export const teammitglieder = [
     {
         name: "Heinrich Lewanski",
         gruppe: "Bauhelfer",
-        bild: "/team/HeinrichLewanski.png",
+        bild: "/team/HeinrichLewanski.jpg",
     },
     {
         name: "Osman Jakupi",

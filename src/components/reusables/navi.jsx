@@ -26,7 +26,7 @@ export const Navi = () => {
     return (
         <nav>
             <Link className="burger"
-            onClick={() => setBurgerOn(!burgerOn)}><i className="fa-solid fa-bars"></i></Link>
+            onClick={() => setBurgerOn(!burgerOn)}><i className="fa-solid fa-bars" alt="burgermenu"></i></Link>
             {burgerOn &&
             <>
                 <Link to="/">Home</Link>
@@ -34,19 +34,5 @@ export const Navi = () => {
                 <Link to="/unternehmen">Unternehmen</Link>
                 <Link to="/karriere">Karriere</Link>
             </>}
-            
-            {/* {burgerOn &&
-            <ul>
-                <li><Link>Home</Link></li>
-                <li><Link>Service</Link></li>
-                <li className="dropdownMenu"><Link>
-                    Unternehmen</Link>
-                    <ul className="dropdown">
-                        <li><Link>Team</Link></li>
-                        <li><Link>Geschichte</Link></li>
-                    </ul>
-                </li>
-                    <li><Link>Karriere</Link></li>
-            </ul>} */}
         </nav>)
 }

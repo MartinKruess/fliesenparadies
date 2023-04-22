@@ -17,11 +17,11 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="footerMiddle">
-                    <div><img src="/zertifikat_fachverband.jpg" alt="" /></div>
-                    <div><img src="/zertifikat_meisterhaft.jpg" alt="" /></div>
-                    <div><img src="/zertifikat_partner.png" alt="" />
+                    <div><img src="/zertifikat_fachverband.jpg" alt="Fachverband Auszeichnung" /></div>
+                    <div><img src="/zertifikat_meisterhaft.jpg" alt="Meisterhaft  Auszeichnung" /></div>
+                    <div><img src="/zertifikat_partner.png" alt="Premium Partner" />
                     </div>
-                    <div><img src="/zertifikat_pq.gif" alt="" /></div>
+                    <div><img src="/zertifikat_pq.gif" alt="Zerifikat von PQ" /></div>
                 </div>
                 <div className="footerBottom">
                     <div><Link to="/impressum">Impressum</Link> </div>
