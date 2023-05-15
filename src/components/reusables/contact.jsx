@@ -9,16 +9,15 @@ export const Contact = () => {
     useEffect (()=> {
         document.body.style.overflow = contactActive ? 'hidden' : 'unset'
     },[contactActive])
+    console.log(contactActive)
 
     return(
         <>
-            
             <div className="contactContainer">
                 <div onClick={() => setContactActive(!contactActive)}>
                     <p>Kontakt</p>
                     <p><i className="fa-solid fa-comments"></i></p>
                 </div>
-                
             </div>
             {contactActive && 
             <div>

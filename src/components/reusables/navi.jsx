@@ -26,7 +26,7 @@ export const Navi = () => {
     return (
         <nav>
             <Link className="burger"
-            onClick={() => setBurgerOn(!burgerOn)}><i className="fa-solid fa-bars" alt="burgermenu"></i></Link>
+            onClick={() => setBurgerOn(!burgerOn)} aria-label="burgermenu"><i className="fa-solid fa-bars" alt="burgermenu"></i></Link>
             {burgerOn &&
             <>
                 <Link to="/">Home</Link>

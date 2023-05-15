@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const ContactUs = () => {
+export const ContactUs = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -10,7 +10,8 @@ export const ContactUs = () => {
     emailjs.sendForm('service_xr87ofh', 'template_no537qy', form.current, 'dqBzxqXidkvWOzS-U')
       .then((result) => {
           console.log(result.text);
-          console.log(form)
+          props.setContactActive(false)
+          
       }, (error) => {
           console.log(error.text);
       });

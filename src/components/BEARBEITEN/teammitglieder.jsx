@@ -76,4 +76,9 @@ export const teammitglieder = [
         gruppe: "Partner",
         bild: "/team/OsmanJakupi.jpg",
     },
+    {
+        name: "Fejsal Ramadani",
+        gruppe: "Bauhelfer",
+        bild: "/team/FejsalRamadani.jpg",
+    },
 ]
